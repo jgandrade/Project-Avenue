@@ -1,0 +1,9 @@
+.desc-rect::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #ffd900;
+    top: 30%;
+    left: -5%;
+}

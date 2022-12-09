@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/services.css";
 
 const services = [
   {
@@ -23,35 +24,62 @@ const services = [
   },
 ];
 
-function ServiceDisplay({ index }) {
-  const display = services[index];
+function ServiceDisplay(props) {
+  const display = services[props.index];
+
+  const description1 = display.description.slice(
+    0,
+    display.description.indexOf(props.break)
+  );
+
+  const description2 = display.description.slice(
+    display.description.indexOf(props.break)
+  );
+
   return (
-    <div>
-      <h3>{display.service}</h3>
-      <p>{display.description}</p>
+    <div className="flex flex-col w-[35%] justify-start relative">
+      <h3 className="font-extrabold text-2xl mb-8 font-headings">
+        {display.service}
+      </h3>
+      <p className="text-lg desc-rect">{description1}</p>
+      <p className="text-lg mt-5">{description2}</p>
     </div>
   );
 }
 
 function Service() {
   return (
-    <div className="text-white flex flex-col justify-center items-center">
-      <div>
-        <h3 className="text-xl px-56">
+    <div className="text-white flex flex-col justify-center items-center mt-16 mb-24 relative">
+      <div class="bottom-cut">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="w-[45%] mb-24">
+        <h3 className="text-2xl text-center font-semibold">
           We help start-up brands in connecting with the right users in order to
-          <span>establish</span> brand loyalty and growth by designing elegant,
-          user-centered, and purpose-built <span>experiences</span>.
+          <span className="italic text-bold text-[#FFD900]"> establish </span>
+          brand loyalty and growth by designing elegant, user-centered, and
+          purpose-built
+          <span className="italic text-bold text-[#FFD900]"> experiences</span>.
         </h3>
       </div>
-      <div>
-        <ServiceDisplay index={0} />
-        <ServiceDisplay index={1} />
+      <div className="flex justify-end items-start gap-16 pr-32">
+        <ServiceDisplay index={0} break="Where" />
+        <ServiceDisplay index={1} break="Our" />
       </div>
-      <div>
-        <ServiceDisplay index={2} />
-        <ServiceDisplay index={3} />
+      <div className="flex justify-start items-start gap-16 mt-24 pl-36">
+        <ServiceDisplay index={2} break="Our" />
+        <ServiceDisplay index={3} break="Our" />
       </div>
-      <div>DIVIDER</div>
     </div>
   );
 }

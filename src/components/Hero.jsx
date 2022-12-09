@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/mousescroll.css";
 
 function Hero() {
   return (
@@ -25,7 +26,12 @@ function Hero() {
           Let's Tell Your Story Here!
         </p>
       </button>
-      <div className="chevron z-10">"go down"</div>
+      <div className="scrolldown z-10 absolute bottom-10">
+        <div className="chevrons">
+          <div className="chevrondown"></div>
+          <div className="chevrondown"></div>
+        </div>
+      </div>
     </div>
   );
 }

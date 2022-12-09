@@ -8,6 +8,7 @@ module.exports = {
       },
       fontFamily: {
         title: "Karla",
+        headings: "Inter",
         mainText: "Montserrat",
       },
     },
