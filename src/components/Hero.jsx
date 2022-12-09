@@ -3,7 +3,7 @@ import "../assets/mousescroll.css";
 
 function Hero() {
   return (
-    <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative overflow-hidden text-center">
+    <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative overflow-hidden text-center pt-[32px]">
       <img
         src="./blue-ball-bg.png"
         className="absolute left-[-20%] top-0 sm:top-[-30%] z-1"
