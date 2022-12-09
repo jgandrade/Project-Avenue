@@ -12,7 +12,7 @@ function Hero() {
       <p className="italic font-semibold w-[80vw] sm:w-100vw text-[clamp(18px,2vw,27px)] mb-3 z-10">
         They're talking about you, Don't you wanna talk back to them?
       </p>
-      <h2 className="font-bold text-[clamp(32px,5vw,3em)] w-[70vw] sm:w-[45vw] text-center z-10 relative ">
+      <h2 className="font-bold text-[clamp(32px,5vw,3em)] w-[70vw] sm:w-[40vw] text-center z-10 relative ">
         Every brand has a{" "}
         <span className="underline decoration-[#FFD900]">story.</span> Let us
         help tell yours.
