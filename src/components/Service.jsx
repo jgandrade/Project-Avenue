@@ -50,7 +50,7 @@ function ServiceDisplay(props) {
 function Service() {
   return (
     <div className="text-white flex flex-col justify-center items-center mt-16 mb-24 relative">
-      <div class="bottom-cut">
+      <div className="bottom-cut">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function Service() {
         >
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>

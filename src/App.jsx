@@ -8,7 +8,7 @@ function App() {
     <div className="App bg-mainBackground font-mainText">
       <Navbar />
       <Hero />
-      <Service />
+      {/* <Service /> */}
     </div>
   );
 }
