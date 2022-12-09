@@ -13,11 +13,11 @@ function Hero() {
         They're talking about you, Don't you wanna talk back to them?
       </p>
       <div className="relative">
-        <h2 className="font-bold text-[clamp(32px,5vw,3em)] sm:w-[40vw] text-center z-10">
+        <h2 className="font-bold text-[clamp(32px,5vw,3em)] text-center z-10">
           Every brand has a{" "}
           <span className="underline decoration-[#FFD900]">story.</span>
         </h2>
-        <h2 className="font-bold text-[clamp(32px,5vw,3em)] sm:w-[40vw] text-center z-10">
+        <h2 className="font-bold text-[clamp(32px,5vw,3em)] text-center z-10">
           Let us help tell yours.
         </h2>
       </div>
