@@ -5,7 +5,7 @@ function Hero() {
     <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative overflow-hidden">
       <img
         src="./blue-ball-bg.png"
-        className="absolute left-[-20%] top-0 sm:top-[-30%] sm:left-0 z-1"
+        className="absolute left-[-20%] top-0 sm:top-[-30%] z-1"
       />
       <img src="./orange-ball-bg.png" className="absolute top-0 right-0 z-1" />
       <p className="italic font-semibold text-md mb-3 z-10">

@@ -37,7 +37,7 @@ function Service() {
   return (
     <div className="text-white flex flex-col justify-center items-center">
       <div>
-        <h3 className="text-xl ">
+        <h3 className="text-xl px-56">
           We help start-up brands in connecting with the right users in order to
           <span>establish</span> brand loyalty and growth by designing elegant,
           user-centered, and purpose-built <span>experiences</span>.
