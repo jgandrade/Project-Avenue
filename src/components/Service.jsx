@@ -37,46 +37,43 @@ function ServiceDisplay(props) {
   );
 
   return (
-    <div className="flex flex-col w-[35%] justify-start relative">
-      <h3 className="font-extrabold text-2xl mb-8 font-headings">
+    <div className="flex flex-col justify-start">
+      <h3 className="font-extrabold text-2xl font-headings">
         {display.service}
       </h3>
       <p className="text-lg desc-rect">{description1}</p>
-      <p className="text-lg mt-5">{description2}</p>
+      <p className="text-lg">{description2}</p>
     </div>
   );
 }
 
 function Service() {
   return (
-    <div className="text-white flex flex-col justify-center items-center mt-16 mb-24 relative">
-      <div className="bottom-cut">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            className="shape-fill"
-          ></path>
-        </svg>
+    <div className="text-white flex flex-col justify-center items-center">
+      <div className="flex justify-center items-start">
+        <div>
+          <h3 className="uppercase text-centerz-10 font-semibold text-[#FFD900] text-[clamp(30px,6vw,60px)]">
+            Let's Lit Up Your Spark
+          </h3>
+          <h3 className="text-[clamp(16px,1.5vw,20px)] z-10 text-center font-semibold md:px-[28%]">
+            We help start-up brands in connecting with the right users in order
+            to
+            <span className="italic text-bold text-[#FFD900]"> establish </span>
+            brand loyalty and growth by designing elegant, user-centered, and
+            purpose-built
+            <span className="italic text-bold text-[#FFD900]">
+              {" "}
+              experiences
+            </span>
+            .
+          </h3>
+        </div>
       </div>
-      <div className="w-[45%] mb-24">
-        <h3 className="text-2xl text-center font-semibold">
-          We help start-up brands in connecting with the right users in order to
-          <span className="italic text-bold text-[#FFD900]"> establish </span>
-          brand loyalty and growth by designing elegant, user-centered, and
-          purpose-built
-          <span className="italic text-bold text-[#FFD900]"> experiences</span>.
-        </h3>
-      </div>
-      <div className="flex justify-end items-start gap-16 pr-32">
+      <div className="flex justify-center items-center relative">
         <ServiceDisplay index={0} break="Where" />
         <ServiceDisplay index={1} break="Our" />
       </div>
-      <div className="flex justify-start items-start gap-16 mt-24 pl-36">
+      <div className="flex justify-start items-start relative">
         <ServiceDisplay index={2} break="Our" />
         <ServiceDisplay index={3} break="Our" />
       </div>

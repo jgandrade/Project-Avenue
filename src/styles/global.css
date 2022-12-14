@@ -19,7 +19,28 @@ body {
   background-color: #181818;
 }
 
-.bottom-cut {
+.custom-shape-divider-top-1671010231 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1671010231 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1671010231 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1671010712 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -29,19 +50,14 @@ body {
   transform: rotate(180deg);
 }
 
-.bottom-cut svg {
+.custom-shape-divider-bottom-1671010712 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 100px;
+  height: 70px;
   transform: rotateY(180deg);
 }
 
-.bottom-cut .shape-fill {
-  fill: #181818;
-}
-
-.clipped {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+.custom-shape-divider-bottom-1671010712 .shape-fill {
+  fill: #ffffff;
 }/*# sourceMappingURL=global.css.map */

@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/mousescroll.css";
+import Parallax from "parallax-js";
 
 function Hero() {
+  useEffect(() => {
+    let scene = document.getElementById("scene");
+    let parallaxInstance = new Parallax(scene);
+  }, []);
+
   return (
-    <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative overflow-hidden text-center pt-[32px]">
-      <img
-        src="./blue-ball-bg.png"
-        className="absolute left-[-20%] top-0 sm:top-[-30%] z-1"
-      />
-      <img src="./orange-ball-bg.png" className="absolute top-0 right-0 z-1" />
+    <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative text-center pt-[32px] ">
+      <div id="scene" className="absolute left-0 top-0 w-screen h-screen">
+        <img
+          data-depth="0.1"
+          src="./blue-ball-bg.png"
+          width={"1500px"}
+          className="absolute left-[-20%!important] top-[0%!important] sm:top-[-30%!important] z-1"
+        />
+        <img
+          data-depth="0.3"
+          src="./orange-ball-bg.png"
+          className="absolute top-[0%!important] left-[40%!important] brightness-110 z-1"
+        />
+      </div>
       <p className="italic font-semibold w-[80vw] sm:w-100vw text-[clamp(18px,2vw,18px)] mb-3 z-10">
         They're talking about you, Don't you wanna talk back to them?
       </p>
@@ -21,7 +35,7 @@ function Hero() {
           Let us help tell yours.
         </h2>
       </div>
-      <p className="italic font-semibold w-[60vw] sm:w-[35vw] text-[clamp(16px,1vw,24px)] text-center mt-10 mb-14 z-10">
+      <p className="italic font-semibold w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[35vw] text-[clamp(16px,1vw,24px)] text-center mt-10 mb-14 z-10">
         A personalized platform specifically built for start-up to help you to
         support your 🚀 growth & expand your 🏘️ neighborhood.
       </p>
@@ -30,7 +44,7 @@ function Hero() {
           Let's Tell Your Story Here!
         </p>
       </button>
-      <div className="scrolldown z-10 absolute bottom-2">
+      <div className="scrolldown z-10 mt-10">
         <div className="chevrons">
           <div className="chevrondown"></div>
           <div className="chevrondown"></div>
