@@ -1,14 +1,16 @@
 import { useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import Parallax from "parallax-js";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
+import Presence from "./components/Presence";
+import WorkedWith from "./components/WorkedWith";
+import Footer from "./components/Footer";
+import StoryHere from "./components/StoryHere";
 
 import "./styles/global.css";
-import Presence from "./components/Presence";
 
 function App() {
   const containerRef = useRef(null);
@@ -27,15 +29,18 @@ function App() {
       }
       containerRef={containerRef}
     >
+      <Navbar />
       <main
         className="App bg-mainBackground font-mainText"
         data-scroll-container
         ref={containerRef}
       >
-        <Navbar />
         <Hero />
         <Service />
+        <WorkedWith />
         <Presence />
+        <StoryHere />
+        <Footer />
       </main>
     </LocomotiveScrollProvider>
   );
