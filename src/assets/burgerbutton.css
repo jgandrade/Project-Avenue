@@ -57,5 +57,6 @@
 }
 
 .menu-btn.open .menu-btn__burger::after {
+  width: 30px;
   transform: rotate(-45deg) translate(35px, 35px);
 }/*# sourceMappingURL=burgerbutton.css.map */

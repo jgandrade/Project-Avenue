@@ -52,7 +52,7 @@ function Service() {
     <div className="text-white flex flex-col justify-center items-center">
       <div className="flex justify-center items-start">
         <div>
-          <h3 className="uppercase text-centerz-10 font-semibold text-[#FFD900] text-[clamp(30px,6vw,60px)]">
+          <h3 className="uppercase text-center z-10 font-semibold text-[#FFD900] text-[clamp(30px,6vw,60px)]">
             Let's Lit Up Your Spark
           </h3>
           <h3 className="text-[clamp(16px,1.5vw,20px)] z-10 text-center font-semibold md:px-[28%]">

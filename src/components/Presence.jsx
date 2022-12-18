@@ -28,10 +28,15 @@ const digitalPresence = [
 ];
 
 function DisplayCard({ sliceStart, sliceEnd }) {
-  return digitalPresence.slice(sliceStart, sliceEnd).map((e) => {
+  return digitalPresence.slice(sliceStart, sliceEnd).map((e, i) => {
     return (
-      <div className="flex flex-col flex-wrap justify-center items-start gap-5 w-[170px] h-[200px]">
-        <img src={`./${e.icon}`} alt={e.description} />
+      <div
+        key={i}
+        className="flex flex-col flex-wrap justify-center items-start gap-5 w-[170px] h-[200px]"
+      >
+        <div className="w-[100px] h-[80px] flex justify-start items-center">
+          <img src={`./${e.icon}`} alt={e.description} />
+        </div>
         <p className="text-xl">{e.description}</p>
       </div>
     );

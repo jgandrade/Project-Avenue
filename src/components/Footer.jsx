@@ -7,16 +7,28 @@ function Footer() {
         <h2 className="font-title font-bold text-4xl">Project Avenue</h2>
         <div className="w-[300px] text-xl">
           <ul>
-            <li>Home</li>
-            <li>FAQ</li>
-            <li>Blog</li>
-            <li>Contract</li>
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>FAQ</li>
+            </a>
+            <a href="#">
+              <li>Blog</li>
+            </a>
+            <a href="#">
+              <li>Contract</li>
+            </a>
           </ul>
         </div>
       </div>
       <div className="text-center flex justify-center items-center gap-10">
-        <p>Terms of Services</p>
-        <p>Privacy Policy</p>
+        <a href="#">
+          <p>Terms of Services</p>
+        </a>
+        <a href="#">
+          <p>Privacy Policy</p>
+        </a>
       </div>
     </div>
   );

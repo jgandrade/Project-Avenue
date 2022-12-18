@@ -21,53 +21,56 @@ body {
     background-color: #181818;
 }
 
-.hero:after {
-    // background: red;
+.ball {
+    animation: rotate 25s linear infinite alternate;
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg) scale(1);
+        }
+        to {
+            transform: rotate(360deg) scale(1.1);
+        }
+    }
 }
 
-// .skew {
-//     // padding: 2em;
-// }
+.sidebar {
+    animation: slide-in 1s cubic-bezier(0.45, 0.45, 0.87, 0.07) forwards;
+    background-color: #181818;
 
-.custom-shape-divider-top-1671010231 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+    img {
+        transform: scale(0);
+        transition: all 0.3s ease;
+        animation: fade-in 0.3s ease forwards;
 
-.custom-shape-divider-top-1671010231 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px;
-    transform: rotateY(180deg);
-}
+        @keyframes fade-in {
+            to {
+                transform: scale(1);
+            }
+        }
+    }
 
-.custom-shape-divider-top-1671010231 .shape-fill {
-    fill: #ffffff;
-}
+    .links {
+        position: relative;
 
-.custom-shape-divider-bottom-1671010712 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+        li {
+            position: relative;
+            transition: all 0.3s ease;
+            width: max-content;
+        }
 
-.custom-shape-divider-bottom-1671010712 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px;
-    transform: rotateY(180deg);
-}
+        li::before {
+            transition: all 0.3s ease;
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 10px;
+            bottom: 0;
+            background-color: #ecb365;
+        }
 
-.custom-shape-divider-bottom-1671010712 .shape-fill {
-    fill: #ffffff;
+        li:hover::before {
+            width: 100%;
+        }
+    }
 }

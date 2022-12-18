@@ -9,19 +9,25 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero flex flex-col items-center justify-center h-screen font-mainText text-white relative text-center pt-[32px] ">
+    <div className="hero flex flex-col items-center justify-center h-[900px] font-mainText text-white relative text-center pt-[32px] ">
       <div id="scene" className="absolute left-0 top-0 w-screen h-screen">
-        <img
-          data-depth="0.1"
-          src="./blue-ball-bg.png"
-          width={"1500px"}
+        <div
+          data-depth="0.2"
           className="absolute left-[-20%!important] top-[0%!important] sm:top-[-30%!important] z-1"
-        />
-        <img
-          data-depth="0.3"
-          src="./orange-ball-bg.png"
-          className="absolute top-[0%!important] left-[40%!important] brightness-110 z-1"
-        />
+        >
+          <img
+            src="./blue-ball-bg.png"
+            width={"1500px"}
+            alt="blue ball"
+            className="ball"
+          />
+        </div>
+        <div
+          data-depth="0.1"
+          className="absolute top-[20%!important] left-[40%!important] brightness-110 z-1"
+        >
+          <img src="./orange-ball-bg.png" alt="orange ball" className="ball" />
+        </div>
       </div>
       <p className="italic font-semibold w-[80vw] sm:w-100vw text-[clamp(18px,2vw,18px)] mb-3 z-10">
         They're talking about you, Don't you wanna talk back to them?
