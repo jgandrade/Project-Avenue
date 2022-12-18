@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 function Sidebar({ isOpen }) {
   const [image, setImage] = useState("");
@@ -18,11 +18,11 @@ function Sidebar({ isOpen }) {
 
   return (
     <div
-      className={`sidebar flex justify-center items-center flex-wrap w-screen h-[calc(100vh-94px)] fixed top-[94px] left-0 ${
+      className={`sidebar flex justify-around items-center flex-wrap w-screen h-screen fixed top-0 left-0 backdrop-blur ${
         isOpen ? "visible" : "hidden"
       }`}
     >
-      <ul className="links text-[clamp(50px,5vw,90px)]">
+      <ul className="links text-[clamp(50px,3vw,90px)] relative md:-top-24">
         <li
           className="uppercase font-bold select-none cursor-pointer"
           onMouseOver={showImage}
@@ -49,7 +49,7 @@ function Sidebar({ isOpen }) {
         <img
           src={image}
           alt="sidebar-image"
-          className="hidden lg:block max-w-[1000px] w-[50vw]"
+          className="hidden lg:block max-w-[1000px] w-[50vw] justify-self-center"
         />
       ) : (
         <div className="hidden lg:block max-w-[1000px] w-[50vw]"></div>
